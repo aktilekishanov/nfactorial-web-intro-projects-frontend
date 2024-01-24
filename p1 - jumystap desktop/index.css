@@ -1,0 +1,357 @@
+body {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: inherit; 
+}
+
+.header {
+    display: flex;
+    padding: 12px 80px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.logo-txt {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Kanit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 122.222% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content:flex-end;
+    gap: 16px;
+
+}
+
+.btn-sm {
+    display: flex;
+    padding: 10px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: none;
+
+    color: #081E34;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.btn-sm{
+    background: none;
+}
+
+.btn-sm-focused{
+    background: rgba(8, 30, 52, 0.12);
+}
+
+/* ---- */
+
+.description {
+    display: flex;
+    padding: 100px 80px;
+    align-items: center;
+    gap: 165px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.info-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+h1 {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Kanit;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700; 
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.btn-md {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    border: none;
+}
+
+.btn-md-focused {
+    border-radius: 100px;
+    color: white;
+    background: #712FFF;
+}
+
+.visual-content {
+    display: flex;
+    position: relative;
+    width: 687px;
+    height: 458px;
+    flex-shrink: 0;
+    
+}
+
+.main-img {
+    width: 100%; /* Make the big image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default image margins */
+    border-radius: 50px; 
+}
+
+.dollar-img {
+    position: absolute; /* Position relative to the container */
+    top: 12px; /* Position from the top of the container */
+    left: 247px; /* Position from the left of the container */
+    width: 139px; /* Set width of small image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.fire-img {
+    position: absolute; /* Position relative to the container */
+    top: 229px; /* Position from the top of the container */
+    left: 471px;
+    width: 148px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* ------ */
+
+.how-it-works {
+    display: flex;
+    height: auto;
+    padding: 100px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    align-self: stretch;
+    border-radius: 32px;
+    background-color: #e0dee6;
+    
+}
+
+.heading-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Kanit;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.txt-sm {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+}
+
+.step-1, .step-2, .step-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.steps-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.lets-get-started {
+    display: flex;
+    padding: 100px 80px;
+    align-items:flex-start;
+    gap: 32px;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.search-bar {
+    display: flex;
+    padding: 13px 75px 13px 13px;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #E1DEE7;
+    background: #FFF;
+}
+
+input::placeholder{
+    text-align: left;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+input {
+    border: none;
+    background-color: white;
+    width: 200px;
+    
+}
+
+.wrapper-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.cv-submission {
+    display: flex;
+    padding: 64px 80px;
+    align-items: center;
+    gap: 128px;
+    align-self: stretch;
+    
+}
+
+.star-img {
+    width: 97px;
+
+    position: absolute; /* Position relative to the container */
+    top: 23px; /* Position from the top of the container */
+    left: 250px; /* Position from the left of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lightning-img {
+    
+
+    position: absolute; /* Position relative to the container */
+    top: 161px; /* Position from the top of the container */
+    left: 62px;
+    width: 87px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn-arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 80px;
+    gap: 32px;
+}
+
+.footer-box-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.footer-menu {
+    justify-content:flex-start;
+    flex-direction: row;
+}
+
+.footer-box-2 {
+    display: flex;
+    justify-content: end;
+}
+
+.footer-right {
+    opacity: 0.5;
+    
+    align-self: center;
+    
+    
+    
+}
+
+.footer-box-2 p {
+    color: #081E34;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body S 14 pt/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+}
+
+.icon {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
