@@ -1,14 +1,14 @@
 // Global variable to hold all fetched posts
 let globalPosts = [];
 let topic = 'Kazakhstan';
-let apiKey = 'https://newsapi.org/v2/everything?q=' + topic + '&from=2024-02-10&sortBy=publishedAt&apiKey=81afdc203c3a49cd87158df62b691774';
-
+// let apiKey = 'https://newsapi.org/v2/everything?q=' + topic + '&from=2024-02-10&sortBy=publishedAt&apiKey=81afdc203c3a49cd87158df62b691774';
+let apiKey = 'https://jsonplaceholder.typicode.com/posts';
 
 
 // Function to fetch all posts and render them
 function fetchAllPosts() {
     setLoadingMessage('posts', 'Loading posts...');
-    fetch(apiKey)
+    fetch()
         .then(response => response.json())
         .then(data => {
             globalPosts = data.articles; // Store the articles in a global variable
