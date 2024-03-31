@@ -9,13 +9,6 @@ import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import About from './components/About';
 
-
-
-
-
-
-
-
 function App() {
 
   const name = 'Aktilek Ishanov';
