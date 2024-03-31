@@ -3,17 +3,28 @@ import React from 'react';
 
 function Projects({ projects }) {
   return (
-    <section>
-      <h2>Projects</h2>
-      <ul>
+    <div className='projects-page'>
+      <h1>Projects I've worked on</h1>
+      <div className='project-items'>
         {projects.map((project, index) => (
-          <li key={index}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-          </li>
+          <div key={index} className='project-item'>
+            <div className='project-img'>
+              <a>
+                <img src={project.url}></img>
+              </a>
+            </div>
+            <div>
+              <div className='project-name'>
+                <h1>{project.name}</h1>
+              </div>
+              <div className='project-description'>
+                <p>{project.description}</p>  
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </div>
   );
 }
   
